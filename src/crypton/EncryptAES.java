@@ -25,7 +25,7 @@ public class EncryptAES implements Runnable {
 	
 	static byte[] encrypted;
 	static byte[] file_content;
-	public static int bytesFile;
+	public static char[] bytesFile;
 	String messagebox;
 	String algo;
 	SecretKey key = null;

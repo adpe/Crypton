@@ -13,7 +13,7 @@ public class ProgressBar extends JPanel implements Runnable {
 	  public ProgressBar() {
 	     pbar = new JProgressBar();
 	     pbar.setMinimum(0);
-	     pbar.setMaximum(EncryptAES.bytesFile);
+	     //pbar.setMaximum(EncryptAES.bytesFile);
 	     add(pbar);
 	     System.out.println(EncryptAES.bytesFile);
 	  }
@@ -35,6 +35,7 @@ public class ProgressBar extends JPanel implements Runnable {
 		     frame.pack();
 		     frame.setVisible(true);
 		 
+		     /**
 		     for (int i = 0; i <= EncryptAES.bytesFile; i++) {
 		       final int percent=i;
 		       try {
@@ -45,6 +46,6 @@ public class ProgressBar extends JPanel implements Runnable {
 		         });
 		         java.lang.Thread.sleep(100);
 		       } catch (InterruptedException e) {;}
-		     } 
+		     } */
 	  }
 }
